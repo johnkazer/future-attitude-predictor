@@ -27,3 +27,24 @@ body, html {
 	font-size: 1.5em;
 	color: #712E01;
 }
+
+/* create an arrow to suggest scrolling down needed */
+/* https://codepen.io/Pichuplayer/pen/BvdVGg?editors=1100 */
+.bottom-arrow{
+	border-bottom: 5px solid #6a0136;
+	text-align: center;
+	font-size: 18pt;
+}
+  
+.bottom-arrow:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-top: 25px solid #6a0136;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
